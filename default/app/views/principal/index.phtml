@@ -1,0 +1,12 @@
+<?php View::content(); ?>
+<?php echo $nombre ?>
+<?php 
+if(Auth::is_valid()){
+ 	Flash::success("Usuario logueado");
+ 	echo Html::link('principal/logout', 'Cerrar session');
+} 
+else{
+	Flash::success("Favor loguearse");
+	echo Html::link('principal/login', 'Volver a Login');
+}
+?>

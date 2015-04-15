@@ -1,0 +1,9 @@
+<?php View::content(); ?>
+ 
+<?php echo Form::open("principal/login"); ?>
+<?php echo Form::label("Usuario","login"); ?>
+<?php echo Form::text("login"); ?>
+<?php echo Form::label("Password","password"); ?>
+<?php echo Form::pass("password"); ?>
+<?php echo Form::submit("Ingresar"); ?>
+<?php echo Form::close(); ?>

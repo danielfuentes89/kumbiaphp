@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title>KumbiaPHP web &amp; App Framework</title>
+  <?php Tag::css('bienvenida') ?>
+  <?php Tag::css('style') ?>
+  <?php Tag::css('bootstrap.css') ?>
+  <?php echo Html::includeCss() ?>
+</head>
+<body>
+    <div id='content'>
+        <div id='head'>
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+
+        <?php View::content(); ?>
+
+        <?php View::partial('kumbia/footer') ?>
+    </div>
+</body>
+</html>
