@@ -3,7 +3,7 @@ class PrincipalController extends AppController {
  
     public function index()
     {
-        $this->nombre=Auth::get('login');
+        //$this->nombre=Auth::get('login');
     }
 
     public function login(){

@@ -19,7 +19,7 @@ class AppController extends Controller
 
     final protected function initialize()
     {
-
+        View::template('plantilla');
     }
 
     final protected function finalize()
